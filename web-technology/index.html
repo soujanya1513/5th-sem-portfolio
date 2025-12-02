@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Projects | Soujanya Poojari</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .project-detail h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .meta-item {
+            padding: 1rem;
+            background: var(--darker-bg);
+            border-radius: 8px;
+        }
+        .meta-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.5rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .back-btn:hover {
+            background: var(--secondary-color);
+        }
+        .demo-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.2rem;
+            background: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 0.5rem;
+        }
+        .demo-btn:hover {
+            background: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>SP</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section style="padding: 120px 20px 80px;">
+        <div class="container">
+            <a href="../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+
+            <h1 class="section-title">🌐 Web Technology Projects</h1>
+            <p class="section-subtitle">Creating modern, responsive web applications</p>
+
+            <!-- Project 1 -->
+            <div class="project-detail">
+                <h3><i class="fas fa-globe"></i> Project 1: [Your Web App Name]</h3>
+                <p style="color: var(--gray-text); margin-bottom: 1.5rem;">
+                    Describe your web application here. Explain its purpose, features, and the technologies 
+                    you used to build it.
+                </p>
+
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong><i class="fas fa-code"></i> Frontend</strong>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-server"></i> Backend</strong>
+                        <p>Node.js, Express</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-database"></i> Database</strong>
+                        <p>MongoDB / MySQL</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-check-circle"></i> Status</strong>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="margin-bottom: 1rem;">Key Features:</h4>
+                    <ul style="color: var(--gray-text); line-height: 2;">
+                        <li>✓ Responsive design for all devices</li>
+                        <li>✓ User authentication and authorization</li>
+                        <li>✓ CRUD operations with database</li>
+                        <li>✓ Real-time updates</li>
+                        <li>✓ RESTful API integration</li>
+                    </ul>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="margin-bottom: 1rem;">Technical Highlights:</h4>
+                    <p style="color: var(--gray-text); line-height: 1.8;">
+                        Add details about the architecture, design patterns, or interesting technical 
+                        challenges you solved.
+                    </p>
+                </div>
+
+                <div class="tech-tags" style="margin-top: 1.5rem;">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MongoDB</span>
+                    <span class="tag">Responsive Design</span>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="demo-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" class="demo-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-detail">
+                <h3><i class="fas fa-globe"></i> Project 2: [Your Web App Name]</h3>
+                <p style="color: var(--gray-text); margin-bottom: 1.5rem;">
+                    Description of your second web development project.
+                </p>
+
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong><i class="fas fa-code"></i> Frontend</strong>
+                        <p>HTML, CSS, JavaScript, Bootstrap</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-server"></i> Backend</strong>
+                        <p>PHP / Node.js</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-database"></i> Database</strong>
+                        <p>MySQL / Firebase</p>
+                    </div>
+                    <div class="meta-item">
+                        <strong><i class="fas fa-spinner"></i> Status</strong>
+                        <p>In Progress</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <h4 style="margin-bottom: 1rem;">Features Implemented:</h4>
+                    <ul style="color: var(--gray-text); line-height: 2;">
+                        <li>✓ Modern UI with animations</li>
+                        <li>✓ Form validation</li>
+                        <li>✓ API integration</li>
+                        <li>✓ Dynamic content loading</li>
+                    </ul>
+                </div>
+
+                <div class="tech-tags" style="margin-top: 1.5rem;">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                    <a href="#" class="demo-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    <a href="#" class="demo-btn"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+
+            <!-- Add More Projects -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: var(--gray-text);">
+                    <i class="fas fa-plus-circle"></i> Add more web projects as you build them!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Soujanya Poojari. Built with passion and code.</p>
+            <p class="footer-links">
+                <a href="../index.html">Back to Home</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
