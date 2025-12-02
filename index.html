@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soujanya Poojari | 5th Semester Portfolio</title>
+    <title>Soujanya Poojari | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
@@ -16,29 +15,26 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="computer-vision/index.html" class="nav-link">Computer Vision</a></li>
+                <li><a href="machine-learning/index.html" class="nav-link">Machine Learning</a></li>
+                <li><a href="web-technology/index.html" class="nav-link">Web Technology</a></li>
+                <li><a href="mini-projects/index.html" class="nav-link">Mini Projects</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="glitch" data-text="Soujanya Poojari">Soujanya Poojari</h1>
-                <p class="subtitle">Computer Science Student | 5th Semester</p>
-                <p class="description">Building innovative solutions through code</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-                <div class="social-links">
+            <div class="hero-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--light-text);">
+                    Soujanya Poojari
+                </h1>
+                <p style="font-size: 1.3rem; color: var(--gray-text); margin-bottom: 1rem;">Computer Science Student | 5th Semester</p>
+                <p style="font-size: 1.1rem; color: var(--gray-text); margin: 2rem 0; line-height: 1.8;">
+                    Hi! I'm a passionate Computer Science student exploring AI, Computer Vision, and Web Technologies. 
+                    This portfolio showcases my academic projects and learning journey.
+                </p>
+                <div class="social-links" style="justify-content: center; margin-top: 3rem;">
                     <a href="https://github.com/soujanya1513" target="_blank" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
@@ -50,175 +46,12 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="code-animation">
-                    <pre><code>
-<span class="keyword">class</span> <span class="class-name">Developer</span> {
-    <span class="keyword">constructor</span>() {
-        <span class="keyword">this</span>.name = <span class="string">"Soujanya"</span>;
-        <span class="keyword">this</span>.passion = <span class="string">"AI & Web"</span>;
-        <span class="keyword">this</span>.learning = <span class="boolean">true</span>;
-    }
-    
-    <span class="function">innovate</span>() {
-        <span class="keyword">return</span> <span class="string">"Building the future"</span>;
-    }
-}
-                    </code></pre>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hi! I'm <strong>Soujanya Poojari</strong>, a passionate Computer Science student currently in my 5th semester.</p>
-                    <p>I love exploring AI, computer vision, and web technologies. This portfolio showcases my academic projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Explore my work across different domains</p>
-            
-            <div class="projects-grid">
-                <!-- Computer Vision -->
-                <div class="project-card" data-category="computer-vision">
-                    <div class="card-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Computer Vision</h3>
-                    <p>Image processing, object detection, and visual recognition systems using OpenCV and TensorFlow.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">OpenCV</span>
-                        <span class="tag">TensorFlow</span>
-                    </div>
-                    <a href="computer-vision/index.html" class="card-link">
-                        View Projects <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Machine Learning -->
-                <div class="project-card" data-category="machine-learning">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Building intelligent systems through data-driven models, predictive analytics, and ML algorithms.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">scikit-learn</span>
-                        <span class="tag">Pandas</span>
-                    </div>
-                    <a href="machine-learning/index.html" class="card-link">
-                        View Projects <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Web Technology -->
-                <div class="project-card" data-category="web">
-                    <div class="card-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <h3>Web Technology</h3>
-                    <p>Modern, responsive web applications.</p>
-                    <a href="web-technology/index.html" class="card-link">
-                        View Projects <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Mini Projects -->
-                <div class="project-card" data-category="mini">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Mini Projects</h3>
-                    <p>Quick experiments and innovative solutions.</p>
-                    <a href="mini-projects/index.html" class="card-link">
-                        View Projects <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <p style="color: var(--gray-text); margin-top: 1rem;">
-                        Python, JavaScript, Java, C++, SQL
-                    </p>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> ML/AI</h3>
-                    <p style="color: var(--gray-text); margin-top: 1rem;">
-                        TensorFlow, OpenCV, scikit-learn, Pandas, NumPy
-                    </p>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Web Tech</h3>
-                    <p style="color: var(--gray-text); margin-top: 1rem;">
-                        React, Node.js, HTML/CSS, MongoDB, Express
-                    </p>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools</h3>
-                    <p style="color: var(--gray-text); margin-top: 1rem;">
-                        Git/GitHub, VS Code, Jupyter, Docker
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <div class="contact-content">
-                <div class="contact-links">
-                    <a href="https://github.com/soujanya1513" target="_blank" class="contact-btn">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="mailto:soujanya.poojari@example.com" class="contact-btn">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a href="https://linkedin.com/in/soujanya-poojari" target="_blank" class="contact-btn">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Soujanya Poojari. Built with passion and code.</p>
-            <p class="footer-links">
-                <a href="https://github.com/soujanya1513/5th-sem-portfolio">View Source</a> •
-                <a href="#home">Back to Top</a>
-            </p>
+            <p>&copy; 2025 Soujanya Poojari</p>
         </div>
     </footer>
 
