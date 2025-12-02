@@ -31,9 +31,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
     }
 });
 
@@ -135,40 +137,8 @@ if (heroDescription) {
     setTimeout(typeWriter, 500);
 }
 
-// Particle background effect (optional)
-const createParticle = () => {
-    const particle = document.createElement('div');
-    particle.style.position = 'fixed';
-    particle.style.width = '2px';
-    particle.style.height = '2px';
-    particle.style.background = 'rgba(99, 102, 241, 0.5)';
-    particle.style.borderRadius = '50%';
-    particle.style.pointerEvents = 'none';
-    particle.style.left = Math.random() * window.innerWidth + 'px';
-    particle.style.top = '-10px';
-    particle.style.animation = 'fall 10s linear';
-    
-    document.body.appendChild(particle);
-    
-    setTimeout(() => {
-        particle.remove();
-    }, 10000);
-};
-
-// Create particles periodically
-setInterval(createParticle, 300);
-
-// Add CSS for particle animation
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes fall {
-        to {
-            transform: translateY(100vh);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
+// Particle background effect - DISABLED for simplicity
+// Removed to keep design clean and simple
 
 // Active navigation highlighting
 const sections = document.querySelectorAll('section[id]');
